@@ -101,7 +101,7 @@ class TextEditorWidget(forms.Textarea):
 
     def get_toolbar_setting(self, toolbar):
         toolbar_setting = get_editor_base_config()
-         if self.installed_plugins is None:
+        if self.installed_plugins is None:
             return toolbar_setting
         for plugin in self.installed_plugins:
             toolbar_setting[plugin["value"]] = {
